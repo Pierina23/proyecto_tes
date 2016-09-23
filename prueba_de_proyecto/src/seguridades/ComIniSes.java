@@ -125,11 +125,11 @@ public class ComIniSes extends javax.swing.JFrame {
         String strUsr, strCla;
         strUsr=txtUsr.getText();
         strCla=String.valueOf(pwdCla.getPassword());
-        if (strUsr.length()>=3)
+        if (strUsr.length()>=4)
         {
-            if (strCla.equals(strUsr) || strCla.length()<3)
+            if (strCla.equals(strUsr) || strCla.length()<4)
             {
-                JOptionPane.showMessageDialog(this, "Clave incorrecta.\nLa clave debe ser diferente al usuario.\nDebe tener al menos 3 caracteres.");
+                JOptionPane.showMessageDialog(this, "Clave incorrecta.\nLa clave debe ser diferente al usuario.\nDebe tener al menos 4 caracteres.");
                 pwdCla.selectAll();
                 pwdCla.requestFocus();
             }
@@ -145,7 +145,7 @@ public class ComIniSes extends javax.swing.JFrame {
         }
         else
         {
-            JOptionPane.showMessageDialog(this, "Usuario incorrecto.\nEl usuario debe tener al menos 3 caracteres.");
+            JOptionPane.showMessageDialog(this, "Usuario invalido.\nEl usuario debe tener al menos 4 caracteres.");
             txtUsr.selectAll();
             txtUsr.requestFocus();
         }
